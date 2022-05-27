@@ -1,34 +1,43 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>ejercicio fomulario</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='formulario.css'>
+    <link rel="stylesheet" href="formulario.css">
     <script src='formulario.js'></script>
 
 </head>
-<body>
-    
-    <h1>FORMULARIO</h1>
-    <form onsubmit="fun()">
-        <P>Nombre </P>
-        <input type="text"  id="f_nombre" name="f_nombre"><br>
-        <P>Edad </P>
-        <input type="number"  id="f_edad" name="f_edad"><br>
-        <P>Escriba un mensaje </P>
-        <input type="text"  id="f_mensaje" name="f_mensaje"><br>
-        <div>
-            <input type="radio" id="f_saludo" name="f_saludo" value="1">
-            <label for="f_saludo">SALUDO</label>
-            <input type="radio" id="f_sugerencia" name="f_sugerencia" value="2">
-            <label for="f_sugerencia">SUGERENCIA</label>
-        </div>
-        <button id="myBtn">Enviar</button>
 
-    
-    </form>
-    <p>  </p>
+<body>
+    <div class="formulario">
+        <h1>FORMULARIO</h1>
+        <form onsubmit="enviar(event)">
+            <P>Nombre </P>
+            <input type="text" id="f_nombre" name="f_nombre"><br>
+            <P>Edad </P>
+            <input type="number" id="f_edad" name="f_edad"><br>
+            <P>Escriba un mensaje </P>
+            <input type="text" id="f_mensaje" name="f_mensaje"><br>
+            <div>
+                <input type="radio" id="f_saludo" name="f_saludo" value="1">
+                <label for="f_saludo">SALUDO</label>
+                <input type="radio" id="f_sugerencia" name="f_sugerencia" value="2">
+                <label for="f_sugerencia">SUGERENCIA</label>
+            </div>
+            <button id="myBtn">Enviar</button>
+
+
+        </form>
+
+        <p> id="demo"> </p>
+
+
+    </div>
+
 </body>
+
 </html>
