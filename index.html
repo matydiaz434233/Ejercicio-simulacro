@@ -8,39 +8,59 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='formulario.css'>
     <link rel="stylesheet" href="formulario.css">
-    <script src='formulario.js'></script>
 
 </head>
 
 <body>
     <div class="formulario">
         <h1>FORMULARIO</h1>
-        <form onsubmit="enviar(event)">
+        <form onsubmit="return enviar()">
             <P>Nombre </P>
             <input type="text" id="f_nombre" name="f_nombre"><br>
             <P>Edad </P>
             <input type="number" id="f_edad" name="f_edad"><br>
+            <P>correo </P>
+            <input type="email" id="f_correo" name="f_correo"><br>
+            <div>
+                <input type="checkbox" id="f_matematica" name="f_materia">
+                <label for="f_matematica">matematica</label><br>
+                <input type="checkbox" id="f_lengua" name="f_materia">
+                <label for="f_lengua">lengua</label><br>
+                <input type="checkbox" id="f_sociales" name="f_materia">
+                <label for="f_sociales">sociales</label><br>
+            </div>
+            <div>
+                <input type="checkbox" id="f_megusta" name="f_megusta" value="1">
+                <label for="f_megusta">me gusta</label><br>
+                <input type="checkbox" id="f_nomegusta" name="f_megusta" value="0">
+                <label for="f_nomegusta">no me gusta</label><br>
+                
+            </div>
             <P>Escriba un mensaje </P>
             <input type="text" id="f_mensaje" name="f_mensaje"><br>
             <div>
                 <input type="radio" id="f_saludo" name="f_saludo" value="1">
-                <label for="f_saludo">SALUDO</label>
+                <label for="f_saludo">SALUDO</label><br>
                 <input type="radio" id="f_sugerencia" name="f_sugerencia" value="2">
-                <label for="f_sugerencia">SUGERENCIA</label>
+                <label for="f_sugerencia">SUGERENCIA</label><br>
             </div>
             <button id="myBtn">Enviar</button>
 
 
         </form>
+        <p> 
 
-        <p> id="demo"> </p>
+        </p>
+
 
 
     </div>
 
     <div class="padre">
-  <div class="hijo">Centrado vertical y horizontal con FlexBox.</div>
-</div>
+        <div class="hijo">Centrado vertical y horizontal con FlexBox.</div>
+    </div>
+
+    <script src='formulario.js'></script>
 
 </body>
 
